@@ -1,0 +1,46 @@
+import javax.swing.JOptionPane;
+
+public class Booleann  {
+	public static void main(String[] args) {
+			int People, groupSize, teamSize, Players ;
+					
+								
+										String peopleString = JOptionPane.showInputDialog("Enter the number of people: ");
+												People = Integer.parseInt(peopleString);
+														String playerString = JOptionPane.showInputDialog("Enter the number of players: ");
+																Players = Integer.parseInt(playerString);
+
+																		if (People > 10){ 
+																				 groupSize =  People/2;
+																				 		 JOptionPane.showMessageDialog(null,"Number of people in total = " + People + 
+																						 					"\nThere are " + groupSize + " people in each group");}
+																													
+																															
+																																	 
+																																	 		if (((3 <=People) && (People <=10))) { 
+																																						groupSize = People/3;
+																																									JOptionPane.showMessageDialog(null,"Number of people in total = " + People + 
+																																												"\nThere are " + groupSize + " people in each group");}	
+																																															 
+																																															 		
+																																																			if ((People < 3)) {
+																																																						JOptionPane.showMessageDialog(null,"The number of people has to be at least 3");}	
+																																																								
+																																																										
+																																																												if ((11<=Players) && (Players<=55)){
+																																																															teamSize = Players/11;
+																																																																		JOptionPane.showMessageDialog(null,"There are " + Players + " players."
+																																																																					+ "\nThe number of players in your team is " + teamSize);
+																																																																								
+																																																																											
+																																																																													if (!((11<=Players) && (Players<=55))){
+																																																																																teamSize = 1;
+																																																																																			JOptionPane.showMessageDialog(null,"The number of players in your team is 1" );}}
+																																																																																						
+																																																																																									
+																																																																																											else {  JOptionPane.showMessageDialog(null,"There are " + Players + " players. "
+																																																																																															+ "\nThe number of players in your team is 1" );
+
+																																																																																															}
+																																																																																															}
+																																																																																															}
